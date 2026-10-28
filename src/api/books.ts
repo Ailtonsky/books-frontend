@@ -1,5 +1,6 @@
 import type { PageResponse } from '../types/PageResponse';
 import type { Book } from '../types/Book';
+import type { Category } from '../types/Category';
 
 const API_URL = import.meta.env.VITE_API_URL;
 
@@ -13,4 +14,14 @@ export async function getBooks(page: number): Promise<PageResponse<Book>> {
   }
 
   return response.json() as Promise<PageResponse<Book>>;
+}
+
+export async function getCategories(): Promise<Category[]> {
+  const response = await fetch(`${API_URL}/categories`);
+
+  if (!response.ok) {
+    throw new Error(`Error al obtener las categorías: HTTP ${response.status}`);
+  }
+
+  return response.json();
 }

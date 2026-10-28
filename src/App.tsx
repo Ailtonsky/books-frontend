@@ -3,6 +3,8 @@ import { getBooks } from './api/books';
 import type { Book } from './types/book';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
+import Hero from './components/home/Hero';
+import CategoryCards from './components/home/CategoryCards';
 
 function App() {
   const [books, setBooks] = useState<Book[]>([]);
@@ -19,6 +21,8 @@ function App() {
   return (
     <>
       <Header />
+      <Hero></Hero>
+      <CategoryCards />
       <ul className="p-4 space-y-1">
         {books.map((book) => (
           <li key={book.id}>
@@ -26,6 +30,7 @@ function App() {
           </li>
         ))}
       </ul>
+
       <Footer />
     </>
   );
