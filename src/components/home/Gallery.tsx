@@ -1,4 +1,4 @@
-// Sección de galería del wireframe (los 4 cuadros debajo del catálogo)
+// seccion de galería del wireframe (los 4 cuadros debajo del catálogo)
 const items = [
   { title: 'Catálogo variado', text: 'Libros de distintos temas' },
   {

@@ -3,6 +3,7 @@ import Hero from '../components/home/Hero';
 import CategoryCards from '../components/home/CategoryCards';
 import BookGrid from '../components/books/BookGrid';
 import Gallery from '../components/home/Gallery';
+import FeaturedAuthors from '../components/home/FeaturedAuthors';
 
 export default function HomePage() {
   // Estado compartido: CategoryCards lo cambia y BookGrid lo usa para filtrar
@@ -14,6 +15,7 @@ export default function HomePage() {
       <CategoryCards selectedId={categoryId} onSelect={setCategoryId} />
       <BookGrid categoryId={categoryId} />
       <Gallery />
+      <FeaturedAuthors />
     </>
   );
 }

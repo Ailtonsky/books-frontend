@@ -1,4 +1,4 @@
-// Franja oscura principal (hero)
+// Franja oscura principal
 export default function Hero() {
   return (
     <section className="flex flex-col items-center justify-center gap-4 bg-blue-dark px-6 pt-20 pb-28 text-center">
