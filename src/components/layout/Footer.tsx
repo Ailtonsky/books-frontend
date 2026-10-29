@@ -13,9 +13,6 @@ export default function Footer() {
           <li>
             <a href="#catalogo">Catálogo</a>
           </li>
-          <li>
-            <a href="/login">Login</a>
-          </li>
         </ul>
       </nav>
     </footer>
