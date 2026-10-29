@@ -6,7 +6,7 @@ import Gallery from '../components/home/Gallery';
 import FeaturedAuthors from '../components/home/FeaturedAuthors';
 
 export default function HomePage() {
-  // Estado compartido: CategoryCards lo cambia y BookGrid lo usa para filtrar
+  // CategoryCards lo cambia y BookGrid lo usa para filtrar
   const [categoryId, setCategoryId] = useState<number | null>(null);
 
   return (
